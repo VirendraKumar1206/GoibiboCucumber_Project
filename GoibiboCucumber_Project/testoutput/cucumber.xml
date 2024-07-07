@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="29.568" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Book a flight on Goibibo" name="Sign up, login, and book a flight with add-ons" time="29.13">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: #\#get_sign_in
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [159af2a5-84d0-4a8a-9c23-3e07908f83cc, findElement {using=id, value=#get_sign_in}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:1062, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12820, moz:profile: C:\Users\Avinash\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:1062/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 159af2a5-84d0-4a8a-9c23-3e07908f83cc">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #\#get_sign_in
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [159af2a5-84d0-4a8a-9c23-3e07908f83cc, findElement {using=id, value=#get_sign_in}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 127.0.2, moz:accessibilityChecks: false, moz:buildID: 20240624183754, moz:debuggerAddress: 127.0.0.1:1062, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12820, moz:profile: C:\Users\Avinash\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:1062/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 159af2a5-84d0-4a8a-9c23-3e07908f83cc
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at Step_definitions.Goibibo.i_navigate_to_the_goibibo_home_page(Goibibo.java:24)
+	at ✽.I navigate to the Goibibo home page(file:///C:/Users/Avinash/eclipse-workspace/GoibiboCucumber_Project/src/test/resources/Goibibo/testing.feature:24)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I navigate to the Goibibo home page...................................failed
+When I sign up with the username testuser and password testpass.............skipped
+And I login with the username testuser and password testpass................skipped
+And I search for a round trip flight from Delhi to Mumbai on 15 August......skipped
+And I filter for non-stop flights and preferred airlines....................skipped
+And I select the flight with the least cost.................................skipped
+And I choose additional services such as meal preferences, seat selection, and extra baggage.skipped
+And if any coupon is available, I choose one................................skipped
+And I proceed to payment....................................................skipped
+And I use the code for zero cancellation and free date change...............skipped
+And I enter the passenger details...........................................skipped
+And I enter the payment details.............................................skipped
+Then the flight should be booked successfully...............................skipped
+]]></system-out>
+</testcase>
+</testsuite>
